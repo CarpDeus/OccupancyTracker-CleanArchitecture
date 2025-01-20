@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
+namespace SecureScalableSolutions.OccupancyTracker.Persistence.Models
 {
     /// <summary>
     /// Locations are the physical locations where occupancy is tracked
@@ -16,14 +16,14 @@ namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
     [Index(nameof(LocationId), nameof(LocationName), IsUnique = true)]
     [Index(nameof(LocationSqid), IsUnique = true)]
     [Table("Locations")]
-    public class Location 
+    public class Location : AuditableEntity
     {
         /// <summary>
         /// Primary key for the organization
         /// </summary>
         [Required]
         [Key]
-        public Int64 LocationId { get; set; }
+        public long LocationId { get; set; }
 
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
         /// <summary>
         /// Human readable name of the location
         /// </summary>
-        [StringLength(256)] 
+        [StringLength(256)]
         public string LocationName { get; set; } = string.Empty;
 
         /// <summary>
@@ -48,12 +48,12 @@ namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
         /// <summary>
         /// Maximum occupancy of the location
         /// </summary>
-        public int MaxOccupancy { get; set; } 
+        public int MaxOccupancy { get; set; }
 
         /// <summary>
         /// Current occupancy. Generally set using the entrance counters
         /// </summary>
-        public int CurrentOccupancy { get; set; } 
+        public int CurrentOccupancy { get; set; }
 
         /// <summary>
         /// The point at which a location is close enough to full to trigger a warning
@@ -102,25 +102,7 @@ namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
         [StringLength(64)]
         public string? Number { get; set; }
 
-        /// <summary>
-        /// Date the entrance data was created
-        /// </summary>
-        public DateTime CreatedDate { get; set; } = DateTime.Now;
-
-        /// <summary>
-        /// Date the entrance data was last modified
-        /// </summary>
-        public DateTime? ModifiedDate { get; set; }
-
-        /// <summary>
-        /// UserInformationSqid of the user who created the entrance
-        /// </summary>
-        public string CreatedBy { get; set; } = string.Empty;
-
-        /// <summary>
-        /// UserInformationSqid of the user who last modified the data
-        /// </summary>
-        public string? ModifiedBy { get; set; }
+      
 
 
         /// <summary>

@@ -1,18 +1,24 @@
-﻿using SecureScalableSolutions.OccupancyTracker.Domain.Common;
+﻿using Microsoft.EntityFrameworkCore;
+using SecureScalableSolutions.OccupancyTracker.Domain.Common;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
+namespace SecureScalableSolutions.OccupancyTracker.Persistence.Models
 {
-    public class EntranceCounter: AuditableEntity
+    [Index(nameof(EntranceCounterSqid), IsUnique = true)]
+    [Table("EntranceCounters")]
+    public class EntranceCounter : AuditableEntity
     {
 
         /// <summary>
         /// Public facing id for the entrance counter
         /// </summary>
+        [StringLength(64)]
         public string EntranceCounterSqid { get; set; } = string.Empty;
 
         /// <summary>

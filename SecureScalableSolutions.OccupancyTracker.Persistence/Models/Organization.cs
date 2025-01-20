@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
+namespace SecureScalableSolutions.OccupancyTracker.Persistence.Models
 {
     [Index(nameof(OrganizationName), IsUnique = true)]
     [Index(nameof(OrganizationSqid), IsUnique = true)]
     [Table("Organizations")]
-    public class Organization 
+    public class Organization : AuditableEntity
     {
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
         /// </summary>
         [Required]
         [Key]
-        public Int64 OrganizationId { get; set; }
+        public long OrganizationId { get; set; }
 
         /// <summary>
         /// Publicly accessible Id for the organization
@@ -33,13 +33,13 @@ namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
         /// <summary>
         /// Human readable organization name
         /// </summary>
-        [StringLength(256)] 
+        [StringLength(256)]
         public string OrganizationName { get; set; } = string.Empty;
 
         /// <summary>
         /// Description of the organization
         /// </summary>
-        [StringLength(1024)] 
+        [StringLength(1024)]
         public string OrganizationDescription { get; set; } = string.Empty;
 
         /// <summary>
@@ -55,43 +55,43 @@ namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
         /// <summary>
         /// Address line 1
         /// </summary>
-        [StringLength(1024)] 
+        [StringLength(1024)]
         public string AddressLine1 { get; set; } = string.Empty;
 
         /// <summary>
         /// Address line 2
         /// </summary>
-        [StringLength(1024)] 
+        [StringLength(1024)]
         public string? AddressLine2 { get; set; } = string.Empty;
 
         /// <summary>
         /// City of the address
         /// </summary>
-        [StringLength(512)] 
+        [StringLength(512)]
         public string City { get; set; } = string.Empty;
 
         /// <summary>
         /// State of the address
         /// </summary>
-        [StringLength(512)] 
+        [StringLength(512)]
         public string State { get; set; } = string.Empty;
 
         /// <summary>
         /// Postal code of the address
         /// </summary>
-        [StringLength(128)] 
+        [StringLength(128)]
         public string PostalCode { get; set; } = string.Empty;
 
         /// <summary>
         /// Country of the address
         /// </summary>
-        [StringLength(256)] 
+        [StringLength(256)]
         public string Country { get; set; } = string.Empty;
 
         /// <summary>
         /// Country code of the phone number
         /// </summary>
-        [StringLength(256)] 
+        [StringLength(256)]
         public string? CountryCode { get; set; }
 
         /// <summary>
@@ -111,27 +111,6 @@ namespace SecureScalableSolutions.OccupancyTracker.Domain.Entities
         public ICollection<Location>? Locations { get; set; }
 
 
-        /// <summary>
-        /// Date the entrance data was created
-        /// </summary>
-        public DateTime CreatedDate { get; set; } = DateTime.Now;
-
-        /// <summary>
-        /// Date the entrance data was last modified
-        /// </summary>
-        public DateTime? ModifiedDate { get; set; }
-
-        /// <summary>
-        /// UserInformationSqid of the user who created the entrance
-        /// </summary>
-        [StringLength(64)]
-        public string CreatedBy { get; set; } = string.Empty;
-
-        /// <summary>
-        /// UserInformationSqid of the user who last modified the data
-        /// </summary>
-        [StringLength(64)]
-        public string? ModifiedBy { get; set; }
 
     }
 }

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BB38D01A-EA99-4552-B7F4-D5D7FD01FE5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{87345024-D5C0-44BC-A358-8C66DEDC77D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{9E36D662-F1B9-4EF3-BB73-3C78CD93629E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2A16BAE4-07BF-4298-81D9-59EF6859409F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E743E0E7-99B7-49C5-8A7D-D07B381F4DC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{A0D15A42-D1C9-42DF-A4C5-F328405F719D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureScalableSolutions.OccupancyTracker.Domain", "SecureScalableSolutions.OccupancyTracker.Domain\SecureScalableSolutions.OccupancyTracker.Domain.csproj", "{BD7868F9-5775-4DCA-B39B-0030CEA29746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureScalableSolutions.OccupancyTracker.Application", "SecureScalableSolutions.OccupancyTracker.Application\SecureScalableSolutions.OccupancyTracker.Application.csproj", "{FA73C15F-E2C4-47DD-8FFC-057DA1910568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureScalableSolutions.OccupancyTracker.Persistence", "SecureScalableSolutions.OccupancyTracker.Persistence\SecureScalableSolutions.OccupancyTracker.Persistence.csproj", "{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD7868F9-5775-4DCA-B39B-0030CEA29746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7868F9-5775-4DCA-B39B-0030CEA29746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7868F9-5775-4DCA-B39B-0030CEA29746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7868F9-5775-4DCA-B39B-0030CEA29746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA73C15F-E2C4-47DD-8FFC-057DA1910568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA73C15F-E2C4-47DD-8FFC-057DA1910568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA73C15F-E2C4-47DD-8FFC-057DA1910568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA73C15F-E2C4-47DD-8FFC-057DA1910568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E36D662-F1B9-4EF3-BB73-3C78CD93629E} = {BB38D01A-EA99-4552-B7F4-D5D7FD01FE5B}
+		{2A16BAE4-07BF-4298-81D9-59EF6859409F} = {BB38D01A-EA99-4552-B7F4-D5D7FD01FE5B}
+		{E743E0E7-99B7-49C5-8A7D-D07B381F4DC9} = {BB38D01A-EA99-4552-B7F4-D5D7FD01FE5B}
+		{A0D15A42-D1C9-42DF-A4C5-F328405F719D} = {BB38D01A-EA99-4552-B7F4-D5D7FD01FE5B}
+		{BD7868F9-5775-4DCA-B39B-0030CEA29746} = {2A16BAE4-07BF-4298-81D9-59EF6859409F}
+		{FA73C15F-E2C4-47DD-8FFC-057DA1910568} = {2A16BAE4-07BF-4298-81D9-59EF6859409F}
+		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8} = {E743E0E7-99B7-49C5-8A7D-D07B381F4DC9}
+	EndGlobalSection
+EndGlobal

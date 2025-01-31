@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9f5828ab-a9e0-4253-98ec-cb71c2f3a1d1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CouchbaseNetClient" Version="3.6.5" />
+    <PackageReference Include="Linq2Couchbase" Version="2.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SecureScalableSolutions.OccupancyTracker.Application\SecureScalableSolutions.OccupancyTracker.Application.csproj" />
+    <ProjectReference Include="..\SecureScalableSolutions.OccupancyTracker.EntranceCounter.Persistence\SecureScalableSolutions.OccupancyTracker.EntranceCounter.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

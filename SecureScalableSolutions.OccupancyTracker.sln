@@ -21,6 +21,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureScalableSolutions.Occ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureScalableSolutions.OccupancyTracker.Persistence", "SecureScalableSolutions.OccupancyTracker.Persistence\SecureScalableSolutions.OccupancyTracker.Persistence.csproj", "{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureScalableSolutions.OccupancyTracker.Api", "SecureScalableSolutions.OccupancyTracker.Api\SecureScalableSolutions.OccupancyTracker.Api.csproj", "{BF3D5082-2A0A-430E-95E3-E6A0D6DFB872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureScalableSolutions.OccupancyTracker.Counter.Api", "SecureScalableSolutions.OccupancyTracker.Counter.Api\SecureScalableSolutions.OccupancyTracker.Counter.Api.csproj", "{3C777677-4ACC-4D33-AAE2-66B0A5AACAC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureScalableSolutions.OccupancyTracker.EntranceCounter.Persistence", "SecureScalableSolutions.OccupancyTracker.EntranceCounter.Persistence\SecureScalableSolutions.OccupancyTracker.EntranceCounter.Persistence.csproj", "{4D9C452B-926D-4018-936E-4129EC7A02E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "originalcode", "originalcode", "{8CD82C97-EE6D-4AD2-BAD4-F4470E146B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OccupancyTracker", "OriginalMonolith\OccupancyTracker.csproj", "{8A660A4C-2FDF-480B-B08C-EAED2CD18E3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +49,22 @@ Global
 		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3D5082-2A0A-430E-95E3-E6A0D6DFB872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3D5082-2A0A-430E-95E3-E6A0D6DFB872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3D5082-2A0A-430E-95E3-E6A0D6DFB872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3D5082-2A0A-430E-95E3-E6A0D6DFB872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C777677-4ACC-4D33-AAE2-66B0A5AACAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C777677-4ACC-4D33-AAE2-66B0A5AACAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C777677-4ACC-4D33-AAE2-66B0A5AACAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C777677-4ACC-4D33-AAE2-66B0A5AACAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9C452B-926D-4018-936E-4129EC7A02E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9C452B-926D-4018-936E-4129EC7A02E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9C452B-926D-4018-936E-4129EC7A02E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9C452B-926D-4018-936E-4129EC7A02E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A660A4C-2FDF-480B-B08C-EAED2CD18E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A660A4C-2FDF-480B-B08C-EAED2CD18E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A660A4C-2FDF-480B-B08C-EAED2CD18E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A660A4C-2FDF-480B-B08C-EAED2CD18E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +77,9 @@ Global
 		{BD7868F9-5775-4DCA-B39B-0030CEA29746} = {2A16BAE4-07BF-4298-81D9-59EF6859409F}
 		{FA73C15F-E2C4-47DD-8FFC-057DA1910568} = {2A16BAE4-07BF-4298-81D9-59EF6859409F}
 		{9F3D0A9A-5E03-4EE0-9277-5456793FD7E8} = {E743E0E7-99B7-49C5-8A7D-D07B381F4DC9}
+		{BF3D5082-2A0A-430E-95E3-E6A0D6DFB872} = {9E36D662-F1B9-4EF3-BB73-3C78CD93629E}
+		{3C777677-4ACC-4D33-AAE2-66B0A5AACAC3} = {9E36D662-F1B9-4EF3-BB73-3C78CD93629E}
+		{4D9C452B-926D-4018-936E-4129EC7A02E3} = {E743E0E7-99B7-49C5-8A7D-D07B381F4DC9}
+		{8A660A4C-2FDF-480B-B08C-EAED2CD18E3A} = {8CD82C97-EE6D-4AD2-BAD4-F4470E146B25}
 	EndGlobalSection
 EndGlobal

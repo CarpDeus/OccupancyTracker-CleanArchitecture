@@ -13,9 +13,9 @@ namespace SecureScalableSolutions.OccupancyTracker.Application.Features.Organiza
     {
         private readonly IOrganizationRepository _organizationRepository;
         private readonly IMapper _mapper;
-        private readonly ILogger<CreateOrganizationCommandHandler> _logger;
+        private readonly ILogger<UpdateOrganizationCommandHandler> _logger;
 
-        public UpdateOrganizationCommandHandler(IOrganizationRepository organizationRepository, IMapper mapper, ILogger<CreateOrganizationCommandHandler> logger)
+        public UpdateOrganizationCommandHandler(IOrganizationRepository organizationRepository, IMapper mapper, ILogger<UpdateOrganizationCommandHandler> logger)
         {
             _organizationRepository = organizationRepository;
             _mapper = mapper;

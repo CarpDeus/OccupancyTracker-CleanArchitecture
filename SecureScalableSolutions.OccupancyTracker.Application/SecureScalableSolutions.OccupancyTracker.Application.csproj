@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Folder Include="Contracts\Infrastructure\" />
+    <Folder Include="Features\OccupancyLog\Queries\" />
     <Folder Include="Models\Mail\" />
   </ItemGroup>
 
